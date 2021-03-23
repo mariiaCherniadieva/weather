@@ -1,0 +1,104 @@
+.container {
+  color: #3b5360;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 4%;
+  background: #bee5d3;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #bee5d3, #80af99);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #bee5d3, #80af99);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Mukta", sans-serif;
+}
+
+.weather {
+  float: left;
+  text-align: center;
+  margin-left: 25px;
+}
+
+.sun_icon {
+  display: block;
+  margin: 30px 45px;
+  width: 250px;
+}
+
+.fas {
+  padding: 15px;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.city {
+  padding: 10px;
+}
+
+.temp-fah {
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #3b5360;
+}
+
+.temp-cel {
+  font-size: 20px;
+  padding: 10px;
+  text-decoration: none;
+  color: #3b5360;
+}
+
+.temp-now {
+  display: inline-block;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+.current-location {
+  text-align: center;
+}
+
+.search {
+  width: 40%;
+  float: right;
+  margin-top: 100px;
+}
+
+.form-label {
+  text-align: left;
+}
+
+.search_icon {
+  margin-top: 28px;
+  font-size: 1.5rem;
+}
+
+.btn {
+  background-color: #86aa9a;
+  margin-top: 15px;
+  border: none;
+  padding: 10px;
+}
+
+.extra-info {
+  text-align: center;
+  margin-top: 350px;
+  font-size: 1.2em;
+  margin-left: 50px;
+}
+
+.future-weather {
+  text-align: center;
+  margin-top: 35px;
+  padding: 30px;
+}
+
+.cloudy-icon {
+  width: 120px;
+  padding: 20px;
+}

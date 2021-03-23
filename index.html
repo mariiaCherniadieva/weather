@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather widget</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link href="src/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/e459845f00.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="clearfix">
+        <div class="row weather">
+          <div class="col-6">
+            <div class="weather_now">
+              <img
+                src="src/images/sun.png"
+                class="sun_icon"
+                alt="Sunny weather"
+              />
+
+              <h1 id="city"><i class="fas fa-map-marker-alt"></i>London</h1>
+              <h2 id="temp-now">10°C</h2>
+              <a href="#" class="temp-fah">°F</a><span>/</span
+              ><a href="#" class="temp-cel">°C</a>
+              <h2>11°C / 4°C</h2>
+              <h2 id="description">Cloudy</h2>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="extra-info">
+              <h3 id="date">Updated: 18:39</h3>
+              <h4 id="humidity">Humidity 68%><br />Feels like 7°C</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row search">
+          <div class="col-10">
+            <form id="form-search">
+              <div class="mb-3">
+                <label for="city" id="location-input" class="form-label"
+                  >Enter your location</label
+                >
+                <input
+                  type="location"
+                  class="form-control"
+                  id="search-text-input"
+                  aria-describedby=""
+                  value=""
+                />
+                <div id="current-location">
+                  <button class="btn btn-secondary">
+                    Your current location
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-2">
+            <div class="search_icon">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row future-weather">
+        <div class="col">
+          <img
+            class="cloudy-icon"
+            src="src/images/partly-cloudy.png"
+            alt="cloudy-sunny-day"
+          />
+          <p>Tomorrow, 26 Feb<br />10°/4°</p>
+        </div>
+        <div class="col">
+          <img
+            class="cloudy-icon"
+            src="src/images/partly-cloudy.png"
+            alt="cloudy-sunny-day"
+          />
+          <p>Sat, 27 Feb<br />9°/6°</p>
+        </div>
+        <div class="col">
+          <img
+            class="cloudy-icon"
+            src="src/images/partly-cloudy.png"
+            alt="cloudy-sunny-day"
+          />
+          <p>Sun, 28 Feb<br />10°/6°</p>
+        </div>
+        <div class="col">
+          <img
+            class="cloudy-icon"
+            src="src/images/partly-cloudy.png"
+            alt="cloudy-sunny-day"
+          />
+          <p>Mon, 1 March<br />9°/6°</p>
+        </div>
+        <div class="col">
+          <img
+            class="cloudy-icon"
+            src="src/images/partly-cloudy.png"
+            alt="cloudy-sunny-day"
+          />
+          <p>Tue, 2 March<br />11°/5°</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
